@@ -1,11 +1,10 @@
-function Right (){
+import ChatUser from "./ChatUser"
+function Right() {
     return (
-        <>
-        <div className="w-[70%] bg-gray-500 border border-white text-white">
-            right
+        <div className="flex-1 bg-black">
+            <ChatUser/>
         </div>
-        </>
-    )
+    );
 }
 
-export default Right
+export default Right;
