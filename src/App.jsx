@@ -1,8 +1,14 @@
-import React from 'react'
+import Left from "./components/left/Left"
+import Right from "./components/right/Right"
+function App() {
 
-const App = () => {
   return (
-    <div>App</div>
+    <>
+    <div className="flex h-screen">
+      <Left/>
+      <Right/>
+    </div>
+    </>
   )
 }
 
