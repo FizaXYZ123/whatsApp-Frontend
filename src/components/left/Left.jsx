@@ -1,3 +1,4 @@
+import Logout from "./Logout";
 import Search from "./Search";
 import User from "./User";
 
@@ -14,9 +15,13 @@ function Left() {
                         </h1>
                     </div>
 
+
                     <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
                         <i className="fa-solid fa-comments text-white"></i>
+                        
                     </div>
+
+                    
                 </div>
             </div>
 
@@ -27,6 +32,8 @@ function Left() {
             <div className="flex-1 overflow-hidden">
                 <User />
             </div>
+            <Logout/>
+            
         </div>
     );
 }
