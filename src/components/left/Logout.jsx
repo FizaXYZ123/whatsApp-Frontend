@@ -1,6 +1,18 @@
+import { useNavigate } from "react-router-dom";
+
 function Logout() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+
+    navigate("/login");
+  };
+
   return (
     <button
+      onClick={handleLogout}
       type="button"
       aria-label="Logout"
       className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition"
